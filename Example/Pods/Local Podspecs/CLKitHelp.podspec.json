@@ -1,0 +1,22 @@
+{
+  "name": "CLKitHelp",
+  "version": "0.1.0",
+  "summary": "A short description of CLKitHelp.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/hongcl8114@hotmail.com/CLKitHelp",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "hongcl8114@hotmail.com": "hongcl8114@hotmail.com"
+  },
+  "source": {
+    "git": "https://github.com/hongcl8114@hotmail.com/CLKitHelp.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CLKitHelp/Classes/**/*"
+}

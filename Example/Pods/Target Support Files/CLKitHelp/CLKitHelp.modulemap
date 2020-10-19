@@ -1,0 +1,6 @@
+framework module CLKitHelp {
+  umbrella header "CLKitHelp-umbrella.h"
+
+  export *
+  module * { export * }
+}
