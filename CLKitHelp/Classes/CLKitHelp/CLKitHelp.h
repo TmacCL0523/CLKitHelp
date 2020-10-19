@@ -23,6 +23,7 @@
 #import "NSString+Check.h"
 #import "NSString+Formatter.h"
 #import "NSString+Encryption.h"
+#import "NSDate+CLKit.h"
 
 #pragma mark ===================基类===================
 #import "CLBaseCollectionViewCell.h"

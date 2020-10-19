@@ -9,7 +9,8 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
+## UpDate
+1.1 添加NSDate分类;
 
 ## Installation
 
