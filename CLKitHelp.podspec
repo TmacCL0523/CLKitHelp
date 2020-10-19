@@ -8,27 +8,18 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CLKitHelp'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CLKitHelp.'
+  s.version          = '1.0'
+  s.summary          = '工具类'
+  s.description      = '常年开早已习惯了自己写的一些类库、方法,所以就写了这个开发类库。为方便就有了它！！！'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/hongcl8114@hotmail.com/CLKitHelp'
+  s.homepage         = 'https://github.com/TmacCL0523'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'hongcl8114@hotmail.com' => 'hongcl8114@hotmail.com' }
-  s.source           = { :git => 'https://github.com/hongcl8114@hotmail.com/CLKitHelp.git', :tag => s.version.to_s }
+  s.author           = { '工具人' => 'hongcl8114@hotmail.com' }
+  s.source           = { :git => 'https://github.com/TmacCL0523/CLKitHelp.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'CLKitHelp/Classes/**/*'
   
@@ -36,7 +27,15 @@ TODO: Add long description of the pod here.
   #   'CLKitHelp' => ['CLKitHelp/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+#   s.public_header_files = 'Pod/Classes/**/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.dependency 'AFNetworking'
+   s.dependency 'CocoaAsyncSocket'
+   s.dependency 'SocketRocket'
+   s.dependency 'MBProgressHUD'
+   s.dependency 'YYCache'
+   s.dependency 'YYModel'
+   s.dependency 'MJRefresh'
+   s.dependency 'DZNEmptyDataSet'
+   s.dependency 'Masonry'
 end
