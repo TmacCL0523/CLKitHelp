@@ -1,1 +1,0 @@
-../../../../../CLKitHelp/Classes/CLKitHelp/Category/NSString/NSString+Check.h

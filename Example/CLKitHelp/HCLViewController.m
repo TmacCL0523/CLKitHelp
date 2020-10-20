@@ -7,7 +7,6 @@
 //
 
 #import "HCLViewController.h"
-#import <CLKitHelp.h>
 
 @interface HCLViewController ()
 
@@ -19,8 +18,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    self.view.backgroundColor = CLRandomColor;
-    CLLogString(@"测试打印");
+//    self.view.backgroundColor = CLRandomColor;
+//    CLLogString(@"测试打印");
+
 }
 
 - (void)didReceiveMemoryWarning
