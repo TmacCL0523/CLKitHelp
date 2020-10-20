@@ -19,7 +19,7 @@
     "ios": "9.0"
   },
   "source_files": "CLKitHelp/Classes/**/*",
-  "public_header_files": "Pod/Classes/**/**/*.h",
+  "public_header_files": "Pod/Classes/**/*.h",
   "dependencies": {
     "AFNetworking": [
 
