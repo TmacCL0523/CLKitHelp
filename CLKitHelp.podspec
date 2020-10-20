@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CLKitHelp'
-  s.version          = '1.1.1'
+  s.version          = '1.2'
   s.summary          = '工具类'
   s.description      = '常年开早已习惯了自己写的一些类库、方法,所以就写了这个开发类库。为方便就有了它！！！'
 
