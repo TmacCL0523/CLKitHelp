@@ -163,7 +163,7 @@ static char ActionTag;
 /// @param nonarlImage 图片
 /// @param selectImage 选中图片
 /// @param cornerRadius 圆角半径
-+ (instancetype)clKit_buttonWithImage:(UIImage *)nonarlImage
++ (instancetype)clKitButtonWithImage:(UIImage *)nonarlImage
                           selectImage:(UIImage *)selectImage
                          cornerRadius:(CGFloat)cornerRadius
 {
