@@ -26,6 +26,7 @@
     CLLogInteger(date.week);
     CLLogInteger(date.weekday);
     CLLogString(date.dateymdhmsString);
+    
 }
 
 - (void)didReceiveMemoryWarning

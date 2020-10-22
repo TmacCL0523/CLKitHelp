@@ -1,6 +1,6 @@
 {
   "name": "CLKitHelp",
-  "version": "1.2",
+  "version": "1.2.1",
   "summary": "工具类",
   "description": "常年开早已习惯了自己写的一些类库、方法,所以就写了这个开发类库。为方便就有了它！！！",
   "homepage": "https://github.com/TmacCL0523",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/TmacCL0523/CLKitHelp.git",
-    "tag": "1.2"
+    "tag": "1.2.1"
   },
   "platforms": {
     "ios": "9.0"

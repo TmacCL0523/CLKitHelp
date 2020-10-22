@@ -254,4 +254,14 @@
     return randomString;
 }
 
+/// 根据key取不同语言字符串 （国际化操作）
+/// @param key 关键字
+/// @param table 表名
++ (NSString *)clKitGetStrForLanguageWithKey:(NSString *)key
+                                  withTable:(NSString *)table
+{
+    NSString * translated = NSLocalizedStringFromTable(key, table, nil);
+    return translated;
+}
+
 @end
