@@ -137,8 +137,8 @@
     UICollectionViewLayoutAttributes *attrs = [UICollectionViewLayoutAttributes layoutAttributesForCellWithIndexPath:indexPath];
 
     //collectionView的宽度
-    CGFloat collectionViewW = self.collectionView.frame.size.width;
-
+    CGFloat collectionViewW = UIScreen.mainScreen.bounds.size.width;
+    
     // 设置布局属性的frame
 
     CGFloat cellW = (collectionViewW - self.edgeInsets.left - self.edgeInsets.right - (self.colunmCount - 1) * self.columnMargin) / self.colunmCount;

@@ -26,6 +26,8 @@
     CLLogInteger(date.week);
     CLLogInteger(date.weekday);
     CLLogString(date.dateymdhmsString);
+    UIButton *btn = [UIButton new];
+    [btn clKit_SetImagePoint:ButtonImageLocationTop andPadding:10];
     
 }
 
