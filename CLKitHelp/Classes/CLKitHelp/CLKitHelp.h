@@ -36,6 +36,9 @@
 #import "CLTextField.h"
 //TODO: ----------Block - tableview ----------
 #import "CLTableView.h"
+//TODO: ----------瀑布流----------
+#import "CLCollectionLayout.h"
+
 
 #pragma mark ===================宏定义===================
 #import "CLKitHelpMacro.h"

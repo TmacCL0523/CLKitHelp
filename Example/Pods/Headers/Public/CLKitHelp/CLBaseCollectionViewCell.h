@@ -1,0 +1,1 @@
+../../../../../CLKitHelp/Classes/CLKitHelp/BaseClass/CollectionViewCell/CLBaseCollectionViewCell.h

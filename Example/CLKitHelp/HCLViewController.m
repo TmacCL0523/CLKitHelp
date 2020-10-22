@@ -20,7 +20,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
 //    self.view.backgroundColor = CLRandomColor;
 //    CLLogString(@"测试打印");
-
+    NSDate *date = [NSDate date];
+    CLLogString([date dateByAddingMonths:2].dateymdhmsString);
+    CLLogBool([date isInFuture]);
+    CLLogInteger(date.week);
+    CLLogInteger(date.weekday);
+    CLLogString(date.dateymdhmsString);
 }
 
 - (void)didReceiveMemoryWarning
