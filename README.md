@@ -24,8 +24,11 @@ pod 'CLKitHelp'
 
 ## 项目文件目录
 
-```CLKitHelp
-├─ BaseClass //基类 - 直接继承免写一些常用的方法
+```
+CLKitHelp
+├─ .DS_Store
+├─ BaseClass
+│    ├─ .DS_Store
 │    ├─ CollectionViewCell
 │    │    ├─ CLBaseCollectionViewCell.h
 │    │    └─ CLBaseCollectionViewCell.m
@@ -38,8 +41,9 @@ pod 'CLKitHelp'
 │    └─ ViewController
 │           ├─ CLBaseViewController.h
 │           └─ CLBaseViewController.m
-├─ CLKitHelp.h //头文件
-├─ Category //分类
+├─ CLKitHelp.h
+├─ Category
+│    ├─ .DS_Store
 │    ├─ NSArrary
 │    │    ├─ NSArray+CLKit.h
 │    │    └─ NSArray+CLKit.m
@@ -80,16 +84,21 @@ pod 'CLKitHelp'
 │    └─ UIView
 │           ├─ UIView+CLKit.h
 │           └─ UIView+CLKit.m
-├─ Custom //自定义View
-│    ├─ CLTableView //带Block的TableView
+├─ Custom
+│    ├─ .DS_Store
+│    ├─ CLCollectionFallLayout
+│    │    ├─ CLCollectionLayout.h
+│    │    └─ CLCollectionLayout.m
+│    ├─ CLTableView
 │    │    ├─ CLTableView.h
 │    │    └─ CLTableView.m
-│    └─ CLTextFiled // 格式化TextFiled
+│    └─ CLTextFiled
 │           ├─ CLTextField.h
 │           └─ CLTextField.m
-├─ Macro //宏定义
+├─ Macro
 │    └─ CLKitHelpMacro.h
-└─ NetWork  //网络工具
+└─ NetWork
+       ├─ .DS_Store
        ├─ NetWroking
        │    ├─ NetWorkCache.h
        │    ├─ NetWorkCache.m
@@ -98,9 +107,10 @@ pod 'CLKitHelp'
        ├─ Socket
        │    ├─ SocketTools.h
        │    └─ SocketTools.m
-       └─ WebSocket 
+       └─ WebSocket
               ├─ WebSocketTools.h
               └─ WebSocketTools.m
+
 ```
               
 ## 系统要求
