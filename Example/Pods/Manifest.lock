@@ -14,7 +14,7 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - CLKitHelp (1.2.1):
+  - CLKitHelp (1.2.2):
     - AFNetworking
     - CocoaAsyncSocket
     - DZNEmptyDataSet
@@ -61,7 +61,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  CLKitHelp: 26743f1752c7b1bfabc507c5e2ad04efc17d5e4a
+  CLKitHelp: ab52b98d37ad66c017bbe0028ad6209bd1afdd5e
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a

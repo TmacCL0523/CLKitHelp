@@ -111,7 +111,6 @@
         [self.columnHeights addObject:@(self.edgeInsets.top)];
     }
 
-    NSLog(@"%lu", (unsigned long)self.colunmCount);
     // 清楚之前所有的布局属性
     [self.attrsArr removeAllObjects];
 
