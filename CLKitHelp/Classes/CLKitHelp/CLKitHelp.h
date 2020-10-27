@@ -38,7 +38,8 @@
 #import "CLTableView.h"
 //TODO: ----------瀑布流----------
 #import "CLCollectionLayout.h"
-
+//TODO: ----------Cell Model----------
+#import "CLCellModel.h" /**使用方法，继承cellmodel 重写方法 把需要用到的属性添加到model里*/
 
 #pragma mark ===================宏定义===================
 #import "CLKitHelpMacro.h"

@@ -27,16 +27,16 @@
 
 #import <Foundation/Foundation.h>
 
-
-
 @interface CLCellModel : NSObject
 
-
 /// 唯一标识符
-@property (nonatomic , copy) NSString *identify;
+@property (nonatomic , strong) NSString *identify;
 
+/// Cell 名称
+@property (nonatomic , strong) Class classObject;
 
-
+/// cell 高度
+@property (nonatomic , assign) CGFloat cellHeight;
 
 
 
