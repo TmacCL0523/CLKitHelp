@@ -33,7 +33,7 @@
 #import "NSObject+CLKit.h"
 #import <sys/utsname.h>
 #import <objc/runtime.h>
-
+#import "CLKitHelpMacro.h"
 
 @implementation NSObject (CLKit)
 
@@ -331,33 +331,94 @@
     return result;
 }
 
-
 /// 获取所有字体名称
--(NSArray *)clKitGetFamilyNames
+- (NSArray *)clKitGetFamilyNames
 {
     NSMutableArray *familyNamesArray = [NSMutableArray array];
-    for(NSString *fontfamilyname in [UIFont familyNames])
-       {
-           [familyNamesArray addObject:fontfamilyname];
-           for(NSString *fontName in [UIFont fontNamesForFamilyName:fontfamilyname])
-           {
-               NSLog(@"\tfont:'%@'",fontName);
-           }
-       }
+    for (NSString *fontfamilyname in [UIFont familyNames]) {
+        [familyNamesArray addObject:fontfamilyname];
+        for (NSString *fontName in [UIFont fontNamesForFamilyName:fontfamilyname]) {
+            NSLog(@"\tfont:'%@'", fontName);
+        }
+    }
     return familyNamesArray;
 }
 
 /// 获取所有字体代号
--(NSArray *)clKitGetFontNames
+- (NSArray *)clKitGetFontNames
 {
     NSMutableArray *fontNamesArray = [NSMutableArray array];
-    for(NSString *fontfamilyname in [UIFont familyNames])
-       {
-           for(NSString *fontName in [UIFont fontNamesForFamilyName:fontfamilyname])
-           {
-               [fontNamesArray addObject:fontName];
-           }
-       }
+    for (NSString *fontfamilyname in [UIFont familyNames]) {
+        for (NSString *fontName in [UIFont fontNamesForFamilyName:fontfamilyname]) {
+            [fontNamesArray addObject:fontName];
+        }
+    }
     return fontNamesArray;
 }
+
+/// 获取项目大小
+- (NSString *)clKitGetCacheValue
+{
+    //获取文件管理器对象
+    NSFileManager *fileManger = [NSFileManager defaultManager];
+
+    //获取缓存沙盒路径
+    NSString *cachePath =  [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+
+    //拼接缓存文件文件夹路径
+    NSString *fileCachePath = [cachePath stringByAppendingPathComponent:@"缓存文件夹（非全路径）"];
+
+    //获取到该缓存目录下的所有子文件（只是文件名并不是路径，后面要拼接）
+    NSArray *subFilePath = [fileManger subpathsAtPath:fileCachePath];
+
+    //先定义一个缓存目录总大小的变量
+    NSInteger fileTotalSize = 0;
+
+    for (NSString *fileName in subFilePath) {
+        //拼接文件全路径（注意：是文件）
+        NSString *filePath = [fileCachePath stringByAppendingPathComponent:fileName];
+
+        //获取文件属性
+        NSDictionary *fileAttributes = [fileManger attributesOfItemAtPath:filePath error:nil];
+
+        //根据文件属性判断是否是文件夹（如果是文件夹就跳过文件夹，不将文件夹大小累加到文件总大小）
+        if ([fileAttributes[NSFileType] isEqualToString:NSFileTypeDirectory]) continue;
+
+        //获取单个文件大小,并累加到总大小
+        fileTotalSize += [fileAttributes[NSFileSize] integerValue];
+    }
+
+    //将字节大小转为MB，然后传出去
+    return [self clKitGetCacheSizerWith:fileTotalSize];
+}
+
+/// 清楚缓存
+- (void)clKitCleanCache
+{
+    //先清除内存中的图片缓存
+    [[SDImageCache sharedImageCache] clearMemory];
+    //清除磁盘的缓存
+    [[SDImageCache sharedImageCache] clearDiskOnCompletion:nil];
+    //2.删除自己缓存
+    [[NSFileManager defaultManager] removeItemAtPath:CLPathCache error:nil];
+}
+
+- (NSString *)clKitGetCacheSizerWith:(CGFloat)size
+{
+    // 1k = 1024, 1m = 1024k
+    if (size < 1024) {// 小于1k
+        return [NSString stringWithFormat:@"%.1fB", size];
+    } else if (size < 1024 * 1024) {// 小于1m
+        CGFloat aFloat = size / 1024;
+        return [NSString stringWithFormat:@"%.1fK", aFloat];
+    } else if (size < 1024 * 1024 * 1024) {// 小于1G
+        CGFloat aFloat = size / (1024 * 1024);
+        return [NSString stringWithFormat:@"%.1fM", aFloat];
+    } else {
+        CGFloat aFloat = size / (10241024 * 1024);
+        return [NSString stringWithFormat:@"%.1fG", aFloat];
+    }
+    return @"";
+}
+
 @end

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'CLKitHelp'
-  s.version          = '1.2.3'
+  s.version          = '1.2.4'
   s.summary          = '工具类'
   s.description      = '常年开早已习惯了自己写的一些类库、方法,所以就写了这个开发类库。为方便就有了它！！！'
 
@@ -22,12 +22,14 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'CLKitHelp/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CLKitHelp' => ['CLKitHelp/Assets/*.png']
-  # }
+  s.public_header_files = 'Pod/Classes/**/*.h'
 
-   s.public_header_files = 'Pod/Classes/**/*.h'
+
+  s.subspec 'BaseClass' do |ss|
+
+  end
+
+
   # s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'AFNetworking'
    s.dependency 'CocoaAsyncSocket'
@@ -38,4 +40,5 @@ Pod::Spec.new do |s|
    s.dependency 'MJRefresh'
    s.dependency 'DZNEmptyDataSet'
    s.dependency 'Masonry'
+   s.dependency 'SDWebImage'
 end

@@ -31,7 +31,7 @@
 **/
 
 #import <Foundation/Foundation.h>
-
+#import "SDWebImage.h"
 
 @interface NSObject (CLKit)
 /** 版本号 */
@@ -91,12 +91,16 @@
 /** 是否包含某个实例变量 */
 - (BOOL)clKitHasIvarForKey:(NSString *)key;
 
-
 /// 获取所有字体名称
-/***/
--(NSArray *)clKitGetFamilyNames;
+- (NSArray *)clKitGetFamilyNames;
 
 /// 获取所有字体代号
--(NSArray *)clKitGetFontNames;
-@end
+- (NSArray *)clKitGetFontNames;
 
+/// 获取项目大小
+- (NSString *)clKitGetCacheValue;
+
+/// 清楚缓存
+- (void)clKitCleanCache;
+
+@end

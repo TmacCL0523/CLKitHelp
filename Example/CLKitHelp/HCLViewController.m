@@ -28,7 +28,10 @@
     CLLogString(date.dateymdhmsString);
     UIButton *btn = [UIButton new];
     [btn clKit_SetImagePoint:ButtonImageLocationTop andPadding:10];
-    
+//    self.clKitGetCacheValue
+    CLLogString(self.clKitGetCacheValue);
+    CLLogObj(CLPathCache);
+    NSLog(@"%@",NSStringFromSelector(_cmd));
 }
 
 - (void)didReceiveMemoryWarning

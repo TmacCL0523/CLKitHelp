@@ -11,7 +11,7 @@
 #ifdef DEBUG
 //#define CLLog(fmt, ...)       NSLog(@"Log打印\n[%@:%d] \n" fmt @"\n--------------\n", [[NSString stringWithFormat:@"%s", __FILE__] lastPathComponent], __LINE__, ## __VA_ARGS__)
 
-#define CLLog(FORMAT, ...)    fprintf(stderr, "LOG\t[时间：%s]<项目文件 : %s\tLine :  %d> \t✅❌LOG\t\t%s\n", __TIME__, [[[NSString stringWithUTF8String:__FUNCTION__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ## __VA_ARGS__] UTF8String]);
+#define CLLog(FORMAT, ...)    fprintf(stderr, "🙏BUG🙏\t[⌚️：%s] [文件: %s\t 方法: %s\t Line: %d] \t打印开始 LOG👉\t%s\t 👈\n", __TIME__, [[NSString stringWithFormat:@"%@", NSStringFromClass([self class])] UTF8String] ,[[NSString stringWithFormat:@"%@", NSStringFromSelector(_cmd)] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ## __VA_ARGS__] UTF8String]);
 
 #else
 #define CLLog(fmt, ...)

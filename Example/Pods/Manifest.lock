@@ -14,13 +14,26 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - CLKitHelp (1.2.2):
+  - CLKitHelp (1.2.4):
+    - AFNetworking
+    - CLKitHelp/BaseClass (= 1.2.4)
+    - CocoaAsyncSocket
+    - DZNEmptyDataSet
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - SDWebImage
+    - SocketRocket
+    - YYCache
+    - YYModel
+  - CLKitHelp/BaseClass (1.2.4):
     - AFNetworking
     - CocoaAsyncSocket
     - DZNEmptyDataSet
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - SDWebImage
     - SocketRocket
     - YYCache
     - YYModel
@@ -34,6 +47,9 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.5.0)
+  - SDWebImage (5.9.4):
+    - SDWebImage/Core (= 5.9.4)
+  - SDWebImage/Core (5.9.4)
   - SocketRocket (0.5.1)
   - YYCache (1.0.4)
   - YYModel (1.0.4)
@@ -51,6 +67,7 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - SDWebImage
     - SocketRocket
     - YYCache
     - YYModel
@@ -61,13 +78,14 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  CLKitHelp: ab52b98d37ad66c017bbe0028ad6209bd1afdd5e
+  CLKitHelp: 1d44725ea117074aee9c05fdfd42167e64d94846
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: 6afc955813966afb08305477dd7a0d9ad5e79a16
+  SDWebImage: b69257f4ab14e9b6a2ef53e910fdf914d8f757c1
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30

@@ -1,1 +1,1 @@
-../../../../../CLKitHelp/Classes/CLKitHelp/CLKitHelp.h
+../../../../../CLKitHelp/Classes/CLKitHelp.h
