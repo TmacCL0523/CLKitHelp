@@ -198,6 +198,7 @@ static char kActionHandlerLongPressGestureKey;
 /** 触发点击事件 */
 - (void)clKitAddTapActionWithBlock:(CLKit_TapActionBlock)block
 {
+    self.userInteractionEnabled = YES;
     UITapGestureRecognizer *gesture = objc_getAssociatedObject(self, &kActionHandlerTapGestureKey);
     if (!gesture) {
         gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForTapGesture:)];
@@ -210,6 +211,7 @@ static char kActionHandlerLongPressGestureKey;
 /** 触发长按事件 */
 - (void)clKitAddLongPressActionWithBlock:(CLKit_LongPressActionBlock)block
 {
+    self.userInteractionEnabled = YES;
     UILongPressGestureRecognizer *gesture = objc_getAssociatedObject(self, &kActionHandlerLongPressGestureKey);
     if (!gesture) {
         gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForLongPressGesture:)];
