@@ -31,7 +31,6 @@
 **/
 
 #import <Foundation/Foundation.h>
-#import "SDWebImage.h"
 
 @interface NSObject (CLKit)
 /** 版本号 */

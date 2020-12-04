@@ -395,10 +395,10 @@
 /// 清楚缓存
 - (void)clKitCleanCache
 {
-    //先清除内存中的图片缓存
-    [[SDImageCache sharedImageCache] clearMemory];
-    //清除磁盘的缓存
-    [[SDImageCache sharedImageCache] clearDiskOnCompletion:nil];
+//    //先清除内存中的图片缓存
+//    [[SDImageCache sharedImageCache] clearMemory];
+//    //清除磁盘的缓存
+//    [[SDImageCache sharedImageCache] clearDiskOnCompletion:nil];
     //2.删除自己缓存
     [[NSFileManager defaultManager] removeItemAtPath:CLPathCache error:nil];
 }
