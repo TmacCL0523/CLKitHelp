@@ -14,9 +14,9 @@ PODS:
   - AFNetworking/Serialization (4.0.1)
   - AFNetworking/UIKit (4.0.1):
     - AFNetworking/NSURLSession
-  - CLKitHelp (1.2.4):
+  - CLKitHelp (1.2.6):
     - AFNetworking
-    - CLKitHelp/BaseClass (= 1.2.4)
+    - CLKitHelp/BaseClass (= 1.2.6)
     - CocoaAsyncSocket
     - DZNEmptyDataSet
     - Masonry
@@ -26,7 +26,7 @@ PODS:
     - SocketRocket
     - YYCache
     - YYModel
-  - CLKitHelp/BaseClass (1.2.4):
+  - CLKitHelp/BaseClass (1.2.6):
     - AFNetworking
     - CocoaAsyncSocket
     - DZNEmptyDataSet
@@ -78,7 +78,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
-  CLKitHelp: 1d44725ea117074aee9c05fdfd42167e64d94846
+  CLKitHelp: 8ec783bcfdb5a0e39531c46448405f459b29e47c
   CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
