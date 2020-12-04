@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/CLKitHelp.svg?style=flat)](https://cocoapods.org/pods/CLKitHelp)
 [![Platform](https://img.shields.io/cocoapods/p/CLKitHelp.svg?style=flat)](https://cocoapods.org/pods/CLKitHelp)
 
+## 版本信息
+当前版本 1.2.5
 ## 安装
 支持cocoapods
 ```ruby
@@ -13,12 +15,13 @@ pod 'CLKitHelp'
 ## 使用方法
 导入头文件
 
-```
+```ruby
 #import <CLKitHelp.h>
 ```
 所有方法添加clkit前缀,调用直接适用CLKit就可以了。（~~NSDate除外~~）
 
 ## 更新
+*  2020年12月04日 添加NSUserDefaults工具 对存取操作做了一个简化，可以存储对象。
 *  2020年10月22日 修改Button分类添加图片位置方法,修改colletctionLayout无法获取到真实高度问题,暂时用屏幕宽度解决。 
 *  2020年10月22日 添加自定义瀑布流类CLCollectionLayout,修改NSDate分类。
 *  2020年10月20日 更新文件格式添加NSDate分类。
