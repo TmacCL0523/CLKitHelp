@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/CLKitHelp.svg?style=flat)](https://cocoapods.org/pods/CLKitHelp)
 
 ## 版本信息
-当前版本 1.2.5
+当前版本 1.2.6
 ## 安装
 支持cocoapods
 ```ruby
